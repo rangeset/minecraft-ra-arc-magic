@@ -1,4 +1,4 @@
-package org.rangeset;
+package arcmagic.item;
 
 import net.minecraft.item.Item;
 

@@ -1,4 +1,4 @@
-package org.rangeset.mixin.client;
+package arcmagic.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

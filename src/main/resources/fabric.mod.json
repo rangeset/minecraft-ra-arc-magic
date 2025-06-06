@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "ra-arc-magic",
+	"id": "arcmagic",
 	"version": "${version}",
 	"name": "Ra Arc Magic",
 	"description": "MAGICAL!!!",
@@ -11,21 +11,24 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/ra-arc-magic/icon.png",
+	"license": "MIT",
+	"icon": "assets/arcmagic/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"org.rangeset.RaArcMagic"
+			"arcmagic.RaArcMagic"
 		],
 		"client": [
-			"org.rangeset.RaArcMagicClient"
+			"arcmagic.RaArcMagicClient"
+		],
+		"fabric-datagen": [
+			"arcmagic.datagen.ArcDataGenEntrypoint"
 		]
 	},
 	"mixins": [
-		"ra-arc-magic.mixins.json",
+		"arcmagic.mixins.json",
 		{
-			"config": "ra-arc-magic.client.mixins.json",
+			"config": "arcmagic.client.mixins.json",
 			"environment": "client"
 		}
 	],

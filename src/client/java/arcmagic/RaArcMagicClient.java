@@ -1,4 +1,4 @@
-package org.rangeset;
+package arcmagic;
 
 import net.fabricmc.api.ClientModInitializer;
 
