@@ -1,6 +1,9 @@
 {
   "itemGroup.arcmagic.arcmagic_group": "Arc Magic",
 
+  "category.categories.arcmagic": "Arc Magic",
+  "key.arcmagic.switch_staff_mode": "Cycle Cast Mode",
+
   "item.arcmagic.wooden_staff": "Wooden Staff",
   "item.arcmagic.stone_staff": "Stone Staff",
   "item.arcmagic.copper_staff": "Copper Staff",

@@ -6,6 +6,8 @@ import net.minecraft.item.ItemStack;
 
 public class ArcStaffItem extends Item {
     private final ArcMaterial material;
+    private static boolean staffMode = true;
+
     public ArcStaffItem(ArcMaterial material) {
         super(new Settings().maxDamage(material.durability()).fireproof());
         this.material = material;
@@ -27,6 +29,10 @@ public class ArcStaffItem extends Item {
             stack.damage(isMagicArray(target)?1:3, attacker, p -> p.sendToolBreakStatus(attacker.getActiveHand()));
         }
         return super.postHit(stack, target, attacker);
+    }
+
+    public static void changeMode() {
+        staffMode = !staffMode;// TODO GUI
     }
 
     private boolean isMagicArray(LivingEntity entity) {
