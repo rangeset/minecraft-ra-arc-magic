@@ -21,5 +21,5 @@ public class ArcMaterialList {
     public static final ArcMaterial ARC_VOIDSTEEL = new ArcMaterial("arc_voidsteel", 2400, 5.0f, 12, VOIDSTEEL);
     public static final ArcMaterial ARC_STELLAMITHRIL = new ArcMaterial("arc_stellamithril", 2600, 5.2f, 20, STELLAMITHRIL);
     public static final ArcMaterial ARC_ARCANITEADAMANTITE = new ArcMaterial("arc_arcaniteadamantite", 3200, 5.8f, 22, ARCANITEADAMANTITE);
-    public static final ArcMaterial ARC_ASTRALITE = new ArcMaterial("arc_astralite", 4000, 6.5f, 25, ASTRALITE);
+    public static final ArcMaterial ARC_ASTRALITE = new ArcMaterial("arc_astralite", 0, 6.5f, 25, ASTRALITE);
 }
