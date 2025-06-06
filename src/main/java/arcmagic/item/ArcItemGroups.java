@@ -41,7 +41,7 @@ public final class ArcItemGroups {
                 entries.add(ORISTARALLOY_STAFF);
                 entries.add(VOIDSTEEL_STAFF);
                 entries.add(STELLAMITHRIL_STAFF);
-                entries.add(ARCANITE_ADAMANTITE_STAFF);
+                entries.add(ARCANITEADAMANTITE_STAFF);
                 entries.add(ASTRALITE_STAFF);
             })
             .build();

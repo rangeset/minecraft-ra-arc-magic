@@ -35,7 +35,7 @@ public class ArcItems {
     public static final Item ORISTARALLOY_STAFF = register("oristaralloy_staff", new ArcStaffItem(ARC_ORISTARALLOY));
     public static final Item VOIDSTEEL_STAFF = register("voidsteel_staff", new ArcStaffItem(ARC_VOIDSTEEL));
     public static final Item STELLAMITHRIL_STAFF = register("stellamithril_staff", new ArcStaffItem(ARC_STELLAMITHRIL));
-    public static final Item ARCANITE_ADAMANTITE_STAFF = register("arcaniteadamantite_staff", new ArcStaffItem(ARC_ARCANITEADAMANTITE));
+    public static final Item ARCANITEADAMANTITE_STAFF = register("arcaniteadamantite_staff", new ArcStaffItem(ARC_ARCANITEADAMANTITE));
     public static final Item ASTRALITE_STAFF = register("astralite_staff", new ArcStaffItem(ARC_ASTRALITE));
 
     public static <T extends Item> T register(String path, T item) {
