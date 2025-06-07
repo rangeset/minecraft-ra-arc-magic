@@ -12,6 +12,38 @@ import java.util.List;
 import static arcmagic.item.ArcItems.*;
 
 public class ArcModelProvider extends FabricModelProvider {
+    public static final List<Item> staff_items = List.of(
+            WOODEN_STAFF,
+            STONE_STAFF,
+            COPPER_STAFF,
+            SPIRITWOOD_STAFF,
+            IRON_STAFF,
+            ORICHALCUM_STAFF,
+            GOLD_STAFF,
+            AMETHYST_STAFF,
+            DARKSTEEL_STAFF,
+            ADAMANTITE_STAFF,
+            MITHRIL_STAFF,
+            DIAMOND_STAFF,
+            NETHERITE_STAFF,
+            ORISTARALLOY_STAFF,
+            VOIDSTEEL_STAFF,
+            STELLAMITHRIL_STAFF,
+            ARCANITEADAMANTITE_STAFF,
+            ASTRALITE_STAFF
+    );
+    public static final List<Item> material_items = List.of(
+            SPIRITWOOD,
+            ORICHALCUM,
+            DARKSTEEL,
+            ADAMANTITE,
+            MITHRIL,
+            ORISTARALLOY,
+            VOIDSTEEL,
+            STELLAMITHRIL,
+            ARCANITEADAMANTITE,
+            ASTRALITE
+    );
     public ArcModelProvider(FabricDataOutput output) {
         super(output);
     }
@@ -21,39 +53,10 @@ public class ArcModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        final List<Item> items = List.of(
-                WOODEN_STAFF,
-                STONE_STAFF,
-                COPPER_STAFF,
-                SPIRITWOOD_STAFF,
-                IRON_STAFF,
-                ORICHALCUM_STAFF,
-                GOLD_STAFF,
-                AMETHYST_STAFF,
-                DARKSTEEL_STAFF,
-                ADAMANTITE_STAFF,
-                MITHRIL_STAFF,
-                DIAMOND_STAFF,
-                NETHERITE_STAFF,
-                ORISTARALLOY_STAFF,
-                VOIDSTEEL_STAFF,
-                STELLAMITHRIL_STAFF,
-                ARCANITEADAMANTITE_STAFF,
-                ASTRALITE_STAFF,
-
-                SPIRITWOOD,
-                ORICHALCUM,
-                DARKSTEEL,
-                ADAMANTITE,
-                MITHRIL,
-                ORISTARALLOY,
-                VOIDSTEEL,
-                STELLAMITHRIL,
-                ARCANITEADAMANTITE,
-                ASTRALITE
-        );
-
-        for (Item item: items) {
+        for (Item item: staff_items) {
+            itemModelGenerator.register(item, Models.GENERATED);
+        }
+        for (Item item: material_items) {
             itemModelGenerator.register(item, Models.GENERATED);
         }
     }

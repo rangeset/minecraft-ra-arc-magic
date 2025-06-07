@@ -9,5 +9,6 @@ public class ArcDataGenEntrypoint implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = generator.createPack();
         pack.addProvider(ArcModelProvider::new);
         pack.addProvider(ArcRecipeProvider::new);
+        pack.addProvider(ArcTagProvider::new);
     }
 }
