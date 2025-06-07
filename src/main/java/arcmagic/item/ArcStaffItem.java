@@ -31,8 +31,9 @@ public class ArcStaffItem extends Item {
         return super.postHit(stack, target, attacker);
     }
 
-    public static void changeMode() {
-        staffMode = !staffMode;// TODO GUI
+    public static boolean changeMode() {
+        staffMode = !staffMode;
+        return staffMode;
     }
 
     private boolean isMagicArray(LivingEntity entity) {

@@ -3,6 +3,8 @@
 
   "category.categories.arcmagic": "弦魔法",
   "key.arcmagic.switch_staff_mode": "切换施法模式",
+  "message.arcmagic.mode.instant": "施法模式 瞬发",
+  "message.arcmagic.mode.charge": "施法模式 蓄力",
 
   "item.arcmagic.wooden_staff": "木质法杖",
   "item.arcmagic.stone_staff": "石质法杖",

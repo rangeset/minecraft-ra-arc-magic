@@ -3,6 +3,8 @@
 
   "category.categories.arcmagic": "Arc Magic",
   "key.arcmagic.switch_staff_mode": "Cycle Cast Mode",
+  "message.arcmagic.mode.instant": "Casting mode: Instant Cast",
+  "message.arcmagic.mode.charge": "Casting mode: Charge Up",
 
   "item.arcmagic.wooden_staff": "Wooden Staff",
   "item.arcmagic.stone_staff": "Stone Staff",
