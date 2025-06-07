@@ -14,16 +14,18 @@ public class RaArcMagicClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		SWITCH_STAFF_MODE = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-				"key.arcmagic.switch_staff_mode", // The translation key of the keybinding's name
-				InputUtil.Type.KEYSYM, // The type of the keybinding, KEYSYM for keyboard, MOUSE for mouse.
-				GLFW.GLFW_KEY_G, // The keycode of the key
-				"category.categories.arcmagic" // The translation key of the keybinding's category.
+				"key.arcmagic.switch_staff_mode",
+				InputUtil.Type.KEYSYM,
+				GLFW.GLFW_KEY_G,
+				"category.categories.arcmagic"
 		));
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			while (SWITCH_STAFF_MODE.wasPressed()) {
-                assert client.player != null;
-                client.player.sendMessage(Text.translatable(ArcStaffItem.changeMode()?"message.arcmagic.mode.instant":"message.arcmagic.mode.charge"), true);
+				if (ArcStaffItem.notCharge()) {
+					assert client.player != null;
+					client.player.sendMessage(Text.translatable(ArcStaffItem.changeMode() ? "message.arcmagic.mode.instant" : "message.arcmagic.mode.charge"), true);
+				}
 			}
 		});
 	}

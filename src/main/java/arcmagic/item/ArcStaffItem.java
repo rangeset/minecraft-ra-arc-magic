@@ -7,6 +7,7 @@ import net.minecraft.item.ItemStack;
 public class ArcStaffItem extends Item {
     private final ArcMaterial material;
     private static boolean staffMode = true;
+    private static boolean charge = false;
 
     public ArcStaffItem(ArcMaterial material) {
         super(new Settings().maxDamage(material.durability()).fireproof());
@@ -34,6 +35,9 @@ public class ArcStaffItem extends Item {
     public static boolean changeMode() {
         staffMode = !staffMode;
         return staffMode;
+    }
+    public static boolean notCharge() {
+        return !charge;
     }
 
     private boolean isMagicArray(LivingEntity entity) {
